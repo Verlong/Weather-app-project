@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css">
+    <title>Weather Forecast</title>
+   </head>
+
+  <body>
+    <div class="main-all" >
+        <div class="header-img-text">
+            <img class="img-weather1" src="img/mountain.jpg" alt="mountain"  width="100%" />
+            
+        </div>
+        <center><h1  class="weather-forecast-body"> Weather Forecast </h1></center>
+        
+        <form class="search-form" id="search-form">
+        <div class="row" id="control-button">
+            <div class="col-6" id="search-form">
+              <input
+                type="search"
+                class="input-city-class"
+                autofocus="on"
+                id="city-input"
+                placeholder="City/Town..."
+                autocomplete="off"
+                />
+
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100" />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-primary" id="current-location-button">
+                📌My location
+              </button>
+            </div>
+          </div>
+        </form> 
+
+          
+            <div>
+              <h1 id="city">
+               <!--Shostka <br /> <i>Sumska obl. Ukraine</i>-->
+              </h1>
+              <div class="today-shostka">
+                <div class="main-sun" ><img src="img/sun1.png" alt="Sun" width="300"></div>
+                <div class="results">
+                  <div class="main-date" id="date">Sunday <br />
+                    05/06/2022 <br /></div> 
+                    <br />
+                  <div class="temp-class"> <span id="temperature"><!--28--></span>
+                    <span  class="units">°C </span><!-- <a href="#" id="celsius-link">°C</a>  | <a href="#" id="fahrenheit-link">°F</a>  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          
+          
+            <div class="weather-week" width=300 >
+              <div class="row">
+                <div class="col">☀️ <br />06.06 <br /> +30 ℃</div>
+                <div class="col">☀️<br /> 07.06 <br /> +32 ℃</div>
+                <div class="col">⛅️ <br />08.06 <br /> +26 ℃</div>
+                <div class="col">🌧️ <br />09.06 <br /> +22 ℃</div>
+                <div class="col">☀️ <br />10.06 <br /> +28 ℃</div>
+                </div>
+            </div>
+            
+            
+
+            <div class="live-video">
+              <iframe
+                width=400
+                height=300
+                src="https://www.youtube.com/embed/86YLFOog4GM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <center><div class="coded-by">Coded by Maryna Bonko</div></center>
+        
+       
+        
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
