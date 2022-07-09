@@ -69,7 +69,7 @@ body {
     margin: 0 auto;
     position: absolute;
     right: 0;
-    top: 200px;
+    top: 280px;
     user-select: none;
     width: 100%;
   }
@@ -138,13 +138,15 @@ body {
   .live-video {
     bottom: 0;
     display: block;
+    width: 500px;
     height: 100%;
+
     left: 700px;
     margin: 0 auto;
     position: absolute;
     right: 10px;
     top: 300px;
-    width: 300px;
+     
   }
   
   .coded-by {
